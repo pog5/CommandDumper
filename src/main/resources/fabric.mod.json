@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "commanddumper",
+  "version": "${version}",
+  "name": "CommandDumper",
+  "description": "Allows you to scale Inventories, Player List, Scoreboard, Hotbar and Chat seperately, Integrates with Reeses Sodium Options",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/commanddumper/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "me.pog5.commanddumper.client.CommanddumperClient"
+    ],
+    "main": [
+      "me.pog5.commanddumper.Commanddumper"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-language-kotlin": ">=${kotlin_loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
