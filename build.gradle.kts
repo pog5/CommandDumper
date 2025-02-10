@@ -1,9 +1,10 @@
+import org.gradle.internal.impldep.org.jsoup.nodes.Entities.EscapeMode.base
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     kotlin("jvm") version "2.0.20"
-    id("fabric-loom") version "1.7.1"
+    id("fabric-loom") version "1.9.2"
     id("maven-publish")
 }
 
@@ -20,7 +21,7 @@ java {
     // Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task
     // if it is present.
     // If you remove this line, sources will not be generated.
-    withSourcesJar()
+//    withSourcesJar()
 }
 
 
